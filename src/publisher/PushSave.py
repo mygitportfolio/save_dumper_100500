@@ -7,4 +7,4 @@ class PushSaveDispatcher:
 
     def dispatch_save(self, state: map) -> None:
         for subscriber in self._subscribers:
-            subscriber.dump_saves(subscriber, state)
+            subscriber.dump_saves(state)
